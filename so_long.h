@@ -16,7 +16,7 @@
 # include <fcntl.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include "mlx.h"
+# include <mlx.h>
 # include "get_next_line.h"
 # include <stdio.h>
 

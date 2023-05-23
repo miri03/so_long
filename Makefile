@@ -68,14 +68,12 @@ all : $(NAME)
 
 $(NAME) : $(OBJ)
 
-#	 cc -lmlx -framework OpenGL -framework AppKit $(OBJ) -o $(NAME)
-	 cc -L /usr/X11/lib -lmlx -framework OpenGL -framework AppKit $(OBJ) -o $(NAME)
+	 cc -lmlx -framework OpenGL -framework AppKit $(OBJ) -o $(NAME)
 
 bonus : $(BONUS)
 
 $(BONUS) : $(OBONUS)
-#	cc -lmlx -framework OpenGL -framework AppKit $(OBONUS) -o $(BONUS)
-	cc -L /usr/X11/lib -lmlx -framework OpenGL -framework AppKit $(OBONUS) -o $(BONUS)
+	cc -lmlx -framework OpenGL -framework AppKit $(OBONUS) -o $(BONUS)
 
 clean :
 	$(RM) $(OBJ) $(OBONUS)
